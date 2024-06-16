@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/help.css">
+    <script src="https://kit.fontawesome.com/137edea602.js" crossorigin="anonymous"></script>
+    <title>Dokumentation</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-kaaba"></i>GENJET</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu"> 
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Tech</a>
+                </li> 
+                <li class="navbar__item">
+                    <a href="/help.html" class="navbar__links">Help</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/tech.html" class="button ">Get Started</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="menu">
+            <h1>display: flex, grid;</h1>
+            <h2>flex</h2>
+            <h3>The element behaves like a block-level element and lays out its content according to the flexbox model.</h3>
+            <h2>grid</h2>
+            <h3>The element behaves like a block-level element and lays out its content according to the grid model.</h3>
+            <h1>flex-direction: column;</h1>
+            <h2>row</h2>
+            <h3>The flex container's main-axis is defined to be the same as the text direction. The main-start and main-end points are the same as the content direction.</h3>
+            <h2>row-reverse</h2>
+            <h3>Behaves the same as row but the main-start and main-end points are opposite to the content direction.</h3>
+            <h2>column</h2>
+            <h3>The flex container's main-axis is the same as the block-axis. The main-start and main-end points are the same as the before and after points of the writing-mode.</h3>
+            <h2>column-reverse</h2>
+            <h3>Behaves the same as column but the main-start and main-end are opposite to the content direction.</h3>
+            <h1>column-gap: 10px;</h1>
+            <h2>normal</h2>
+            <h3>The browser's default spacing is used between columns. For multi-column layout this is specified as 1em. For all other layout types it is 0.</h3>
+            <h2>length</h2>
+            <h3>The size of the gap between columns, defined as a length(like px, em, rem, vh). The length property's value must be non-negative.</h3>
+            <h2>percentage</h2>
+            <h3>The size of the gap between columns, defined as a percentage. The percentage property's value must be non-negative.</h3>
+            <h1>row-gap: 10px;</h1>
+            <h2>normal</h2>
+            <h3>The browser's default spacing is used between columns. For multi-column layout this is specified as 1em. For all other layout types it is 0.</h3>
+            <h2>length</h2>
+            <h3>The size of the gap between columns, defined as a length(like px, em, rem, vh). The length property's value must be non-negative.</h3>
+            <h2>percentage</h2>
+            <h3>The size of the gap between columns, defined as a percentage. The percentage property's value must be non-negative.</h3>
+            <h1>padding: auto;</h1>
+            <h2>Values</h2>
+            <h3>The padding property may be specified using one, two, three, or four values. Each value is a <length> or a <percentage>. Negative values are invalid.
+            </h3>
+            <h3>
+                When one value is specified, it applies the same padding to all four sides.
+            </h3>
+            <h3>
+                When two values are specified, the first padding applies to the top and bottom, the second to the left and right.
+            </h3>
+            <h3>
+                When three values are specified, the first padding applies to the top, the second to the right and left, the third to the bottom.
+            </h3>    
+            <h3>
+                When four values are specified, the paddings apply to the top, right, bottom, and left in that order (clockwise).
+            </h3>    
+            <h1>margin: auto;</h1>
+            <h2>Values</h2>
+            <h3>The margin property may be specified using one, two, three, or four values. Each value is a length, a percentage, or the keyword auto. Negative values draw the element closer to its neighbors than it would be by default.</h3>
+            <h3>When one value is specified, it applies the same margin to all four sides.</h3>
+            <h3>When two values are specified, the first margin applies to the top and bottom, the second to the left and right.</h3>
+            <h3>When three values are specified, the first margin applies to the top, the second to the right and left, the third to the bottom.</h3>
+            <h3>When four values are specified, the margins apply to the top, right, bottom, and left in that order (clockwise).</h3>
+            <h1>color: black;</h1>
+            <h3>The color property is specified as a single color value.</h3>
+            <h3>Note that the value must be a uniform color. It can't be a gradient, which is actually a type of image.</h3>
+            <h2>color</h2>
+            <h3>Sets the color of the textual and decorative parts of the element.</h3>
+            <h2>currentcolor</h2>
+            <h3>Sets the color to the element's color property value. However, if set as the value of color, currentcolor is treated as inherit.</h3>
+            <h1>background-color: white;</h1>
+            <h3>Text decorations are drawn across descendant text elements. This means that if an element specifies a text decoration, then a child element can't remove the decoration.</h3>
+            <h2>text-decoration-line</h2>
+            <h3>Sets the kind of decoration used, such as underline or line-through.</h3>
+            <h2>text-decoration-color</h2>
+            <h3>Sets the color of the decoration.</h3>
+            <h2>text-decoration-style</h2>
+            <h3>Sets the style of the line used for the decoration, such as solid, wavy, or dashed.</h3>
+            <h2>text-decoration-thickness</h2>
+            <h3>Sets the thickness of the line used for the decoration.</h3>
+            <h1>width: 100%;</h1>
+            <h3>The specified value of width applies to the content area so long as its value remains within the values defined by min-width and max-width.</h3>
+            <h3>If the value for width is less than the value for min-width, then min-width overrides width.</h3>
+            <h3>If the value for width is greater than the value for max-width, then max-width overrides width.</h3>
+            <h1>height: 80vh;</h1>
+            <h2>length</h2>
+            <h3>Defines the height as a distance value.</h3>
+            <h2>percentage</h2>
+            <h3>Defines the height as a percentage of the containing block's height.</h3>
+            <h2>auto</h2>
+            <h3>The browser will calculate and select a height for the specified element.</h3>
+            <h2>max-content</h2>
+            <h3>The intrinsic preferred height.</h3>
+            <h2>min-content</h2>
+            <h3>The intrinsic minimum height.</h3>
+            <h2>fit-content</h2>
+            <h3>Use the available space, but not more than max-content, i.e min(max-content, max(min-content, stretch)).</h3>
+            <h2>fit-content(length-percentage)</h2>
+            <h3>Uses the fit-content formula with the available space replaced by the specified argument, i.e. min(max-content, max(min-content, length-percentage)).</h3>
+            <h2>clamp()</h2>
+            <h3>Enables selecting a middle value within a range of values between a defined minimum and maximum.</h3>
+            <h1>border: 1px solid black;</h1>
+            <h2>line-width</h2>
+            <h3>Sets the thickness of the border. Defaults to medium if absent.</h3>
+            <h2>line-style</h2>
+            <h3>Sets the style of the border. Defaults to none if absent.</h3>
+            <h2>color</h2>
+            <h3>Sets the color of the border. Defaults to currentcolor if absent. </h3>
+            <h1>border-radius: 5px;</h1>
+            <h3>The border-radius property is specified as:</h3>
+            <h3>one, two, three, or four length or percentage values. This is used to set a single radius for the corners, followed optionally by "/" and one, two, three, or four length or percentage values. This is used to set an additional radius, so you can have elliptical corners.</h3>
+            <h1>opacity: 0 to 1 / 0% 100%;</h1>
+            <h3>A number in the range 0.0 to 1.0, inclusive, or a percentage in the range 0% to 100%, inclusive, representing the opacity of the channel (that is, the value of its alpha channel). Any value outside the interval, though valid, is clamped to the nearest limit in the range.</h3>
+            <h1>justify-content: center;</h1>
+            <h2>start</h2>
+            <h3>The items are packed flush to each other toward the start edge of the alignment container in the main axis.</h3>
+            <h2>end</h2>
+            <h3>The items are packed flush to each other toward the end edge of the alignment container in the main axis.</h3>
+            <h2>flex-start</h2>
+            <h3>The items are packed flush to each other toward the edge of the alignment container depending on the flex container's main-start side. This only applies to flex layout items. For items that are not children of a flex container, this value is treated like start.</h3>
+            <h2>flex-end</h2>
+            <h3>The items are packed flush to each other toward the edge of the alignment container depending on the flex container's main-end side. This only applies to flex layout items. For items that are not children of a flex container, this value is treated like end.</h3>
+            <h2>center</h2>
+            <h3>The items are packed flush to each other toward the center of the alignment container along the main axis.</h3>
+            <h2>left</h2>
+            <h3>The items are packed flush with each other toward the left edge of the alignment container. When the property's horizontal axis is not parallel with the inline axis, such as when flex-direction: column; is set, this value behaves like start.</h3>
+            <h2>right</h2>
+            <h3>The items are packed flush to each other toward the right edge of the alignment container in the appropriate axis. If the property's axis is not parallel with the inline axis (in a grid container) or the main-axis (in a flexbox container), this value behaves like start.</h3>
+            <h2>normal</h2>
+            <h3>Behaves as stretch, except in the case of multi-column containers with a non-auto column-width, in which case the columns take their specified column-width rather than stretching to fill the container. As stretch behaves as start in flex containers, normal also behaves as start.</h3>
+            <h2>space-between</h2>
+            <h3>The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The first item is flush with the main-start edge, and the last item is flush with the main-end edge.</h3>
+            <h2>space-around</h2>
+            <h3>The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The empty space before the first and after the last item equals half of the space between each pair of adjacent items.</h3>
+            <h2>space-evenly</h2>
+            <h3>The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, are all exactly the same.</h3>
+            <h2>stretch</h2>
+            <h3>If the combined size of the items along the main axis is less than the size of the alignment container, any auto-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by max-height/max-width (or equivalent functionality), so that the combined size exactly fills the alignment container along the main axis.</h3>
+            <h1>align-items: center;</h1>
+            <h2>normal</h2>
+            <h3>The effect of this keyword is dependent of the layout mode we are in:</h3>
+            <h3>In absolutely-positioned layouts, the keyword behaves like start on replaced absolutely-positioned boxes, and as stretch on all other absolutely-positioned boxes.</h3>
+            <h3>In static position of absolutely-positioned layouts, the keyword behaves as stretch.</h3>
+            <h3>For flex items, the keyword behaves as stretch.</h3>
+            <h3>For grid items, this keyword leads to a behavior similar to the one of stretch, except for boxes with an aspect ratio or an intrinsic sizes where it behaves like start.</h3>
+            <h3>The property doesn't apply to block-level boxes, and to table cells.</h3>
+            <h2>flex-start</h2>
+            <h3>Used in flex layout only, aligns the flex items flush against the flex container's main-start or cross-start side.</h3>
+            <h2>flex-end</h2>
+            <h3>Used in flex layout only, aligns the flex items flush against the flex container's main-end or cross-end side.</h3>
+            <h2>center</h2>
+            <h3>The flex items' margin boxes are centered within the line on the cross-axis. If the cross-size of an item is larger than the flex container, it will overflow equally in both directions.</h3>
+            <h2>start</h2>
+            <h3>The items are packed flush to each other toward the start edge of the alignment container in the appropriate axis.</h3>
+            <h2>end</h2>
+            <h3>The items are packed flush to each other toward the end edge of the alignment container in the appropriate axis.</h3>
+            <h2>self-start</h2>
+            <h3>The items are packed flush to the edge of the alignment container's start side of the item, in the appropriate axis.</h3>
+            <h2>self-end</h2>
+            <h3>The items are packed flush to the edge of the alignment container's end side of the item, in the appropriate axis.</h3>
+            <h2>baseline, first baseline, last baseline</h2>
+            <h3>All flex items are aligned such that their flex container baselines align. The item with the largest distance between its cross-start margin edge and its baseline is flushed with the cross-start edge of the line.</h3>
+            <h2>stretch</h2>
+            <h3>If the items are smaller than the alignment container, auto-sized items will be equally enlarged to fill the container, respecting the items' width and height limits.</h3>
+            <h2>safe</h2>
+            <h3>Used alongside an alignment keyword. If the chosen keyword means that the item overflows the alignment container causing data loss, the item is instead aligned as if the alignment mode were start.</h3>
+            <h2>unsafe</h2>
+            <h3>Used alongside an alignment keyword. Regardless of the relative sizes of the item and alignment container and whether overflow which causes data loss might happen, the given alignment value is honored.</h3>
+            
+        </div>
+      </div>
+</body>
+</html>

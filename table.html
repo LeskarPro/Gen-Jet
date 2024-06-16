@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Generator</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/CSS/techCSS.css">
+    <link rel="stylesheet" href="/CSS/table.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-kaaba"></i>GENJET</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu"> 
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Tech</a>
+                </li> 
+                <li class="navbar__item">
+                    <a href="/help.html" class="navbar__links">Help</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/tech.html" class="button ">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="menu">
+            <div class="tech-picker">
+                <h1>Choose what you need to generate!</h1>
+                <a class="btn1" id="btnTab" href="/tech.html">Button</a>
+                <a class="btn1" id="btnGrad" href="/gradient.html">Gradient</a>
+                <a class="btn1" id="btnGrid" href="/gridLayout.html">Grid Page</a>
+                <a class="btn1" id="btnBtn" href="/table.html">Table</a>
+            </div>
+            <div class="generator">
+                <form class="input-form">
+                    <div>
+                        <h4>Table properties:</h4>
+                        <label for="rows">Number of Rows:</label>
+                        <input type="number" id="rows" class="table-input" value="2">
+                        <label for="cols">Number of Columns:</label>
+                        <input type="number" id="cols" class="table-input" value="2">
+                        <br>
+                    </div>
+                    <div class="color-pick">
+                        <label for="btnColor"> Header color:</label>
+                        <input type="color" name="Button Color" id="hColor" value="#ccd1d9">
+                    
+                    </div>
+                    <div class="color-pick">
+                        <label for="btnColor"> Main color:</label>
+                        <input type="color" name="Button Color" id="mColor" value="#E8E8E8">
+                    
+                    </div>
+                </form>
+                
+                <div class="buttons">
+                    <h4>Table Preview:</h4>
+                    <div class="table">
+                        <div id="table-container">
+                            <table id="table">
+                                <tr>
+                                       <th>Header 1</th>
+                                       <th>Header 2</th>
+                                </tr>
+                                <tr>
+                                       <td>Row 1, Col 0</td>
+                                       <td>Row 1, Col 1</td>
+                                </tr>
+                                <tr>
+                                       <td>Row 2, Col 0</td>
+                                       <td>Row 2, Col 1</td>
+                                </tr>
+                         </table>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" id="generateCode" class="button">Generate code</a>
+                    </div>
+                </div>   
+
+            </div>
+
+            <div class="coding">
+                <div>
+                    <h3 class="html">HTML</h3>
+                    <div id="html-code"></div>
+                </div>
+                <div>
+                    <h3 class="css" >CSS</h3>
+                    <div id="css-code"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/table.js"></script>
+</body>
+</html>

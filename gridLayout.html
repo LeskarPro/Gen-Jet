@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/CSS/techCSS.css">
+    <link rel="stylesheet" href="/CSS/grid.css">
+    <script src="https://kit.fontawesome.com/137edea602.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-kaaba"></i>GENJET</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu"> 
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Tech</a>
+                </li> 
+                <li class="navbar__item">
+                    <a href="/help.html" class="navbar__links">Help</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/tech.html" class="button ">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="menu">
+            <div class="tech-picker">
+                <h1>Choose what you need to generate!</h1>
+                <a class="btn1" id="btnGrad" href="/tech.html">Button</a>
+                <a class="btn1" id="btnGrid" href="/gradient.html">Gradient</a>
+                <a class="btn1" id="btnBtn" href="/gridLayout.html">Grid Page</a>
+                <a class="btn1" id="btnTab" href="/table.html">Table</a>
+            </div>
+            <div class="generator">
+                <form class="input-form">
+                    <h4>Grid properties:</h4>
+                    <input type="number" placeholder="Number of rows:" id="rowNumber" value="2">
+                    <input type="number" placeholder="Row gap:" id="rowGap">
+                    <input type="number" placeholder="Column gap:" id="columnGap">
+                </form>
+
+                <div class="buttons">
+                    <h4>Grid Preview:</h4>
+                    <!-- <div class="button1"> -->
+                        <div class="grid-preview">
+                                <div class="header"></div>
+                                <div class="grid-wrapper">
+                                    <div id="grid">
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                    </div>
+                                </div>
+                                <div class="footer"></div>
+                        </div>
+                    <!-- </div> -->
+                    <div>
+                        <a href="#" id="generateCode" class="button">Generate code</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="coding">
+                <div>
+                    <h3 class="html">HTML</h3>
+                    <div id="html-code"></div>
+                </div>
+                <div>
+                    <h3 class="css" >CSS</h3>
+                    <div id="css-code"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/js/grid.js"></script>
+</body>
+</html>
+
+

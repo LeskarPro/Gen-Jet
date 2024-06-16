@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--buttonBColor);
+}
+
+td {
+    background-color: var(--bgcolor);
+}
+
+.table-input {
+    margin-bottom: 10px;
+}
+
+table {
+    border-radius: 5px;
+}
+#generateCode {
+    background: linear-gradient(to top, #ff0844 0%, #f77062 100%);
+}
+#generateCode:hover {
+    background:#4837ff;
+    transition: all 0.3s ease;
+}

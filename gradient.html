@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/CSS/gradient.css">
+    <link rel="stylesheet" href="/CSS/techCSS.css">
+    <script src="https://kit.fontawesome.com/137edea602.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fa-solid fa-kaaba"></i>GENJET</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu"> 
+            <li class="navbar__item">
+                <a href="/index.html" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="tech.html" class="navbar__links">Tech</a>
+            </li> 
+            <li class="navbar__item">
+                <a href="/help.html" class="navbar__links">Help</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="/tech.html" class="button ">Get Started</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <div class="main">
+    <div class="menu">
+        <div class="tech-picker">
+            <h1>Choose what you need to generate!</h1>
+            <a class="btn1" id="btnGrad" href="/tech.html">Button</a>
+            <a class="btn1" id="btnBtn" href="/gradient.html">Gradient</a>
+            <a class="btn1" id="btnGrid" href="/gridLayout.html">Grid Page</a>
+            <a class="btn1" id="btnTab" href="/table.html">Table</a>
+        </div>
+        <div class="generator">
+          <div class="input-form">
+            <h4>Gradient properties:</h4>
+            <div class="column-direction">
+              <p>Direction:</p>
+              <div class="select-box">
+                <select>
+                  <option value="to top">Top</option>
+                  <option value="to right top">Right top</option>
+                  <option value="to right">Right</option>
+                  <option value="to right bottom">Right bottom</option>
+                  <option value="to bottom">Bottom</option>
+                  <option value="to left bottom">Left bottom</option>
+                  <option value="to left">Left</option>
+                  <option value="to left top" selected>Left top</option>
+                </select>
+              </div>
+            </div>
+            <div class="column palette">
+              <p>Colors:</p>
+              <div class="colors">
+                <input type="color" value="#ff0844">
+                <input type="color" value="#f77062">
+              </div>
+            </div>
+          </div>
+          <h4 id="gradient-preview">Gradient preview:</h4>
+          <div class="gradient-box"></div>
+          <div class="buttons">
+            <button class="refresh">Refresh Colors</button>
+            <button class="copy">Copy Code</button>
+          </div>
+        </div>
+        <div class="coding">
+          <div>
+            <h3 class="css" >CSS</h3>
+            <div id="css-code">
+              <textarea class="row" disabled>background-image: linear-gradient(to left top, #ff0844,  #f77062);</textarea>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+      <script src="/js/gradient.js" defer></script>
+</body>
+</html>

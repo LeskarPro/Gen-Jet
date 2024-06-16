@@ -1,0 +1,236 @@
+:root {
+    --white: #f8f8ff;
+    --bgcolor: #E8E8E8;
+    --hicolor: #F77062;
+    --propertiesBgColor: #ffce54;
+    --buttonBColor: #ccd1d9;
+    --codeNameColor: #d8334a;
+    --codeColor:#131313;
+
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.menu {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    margin: 0 auto;
+    background-color: var(--bgcolor);
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    min-height: 100vh;
+}
+
+.tech-picker {
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+    max-width: 360px;
+    height: auto;
+    background-color: var(--codeColor);
+    color: var(--white);
+    
+
+}
+h1 {
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.btn1 {
+    border: none;
+    background-color: var(--codeColor);
+    font-size: 1.2rem;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    color: var(--white);
+    text-decoration: none;
+
+    
+}
+
+#btnBtn {
+    background-color:  var(--bgcolor);
+    color: var(--codeColor);
+}
+
+.generator {
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    width: 50vh;
+
+    
+}
+
+.input-form {
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    width: 300px;
+    
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    
+}
+
+::placeholder {
+    color: var(--codeColor);
+  }
+
+input[type=text] {
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 1rem;
+
+}
+
+input[type=number] {
+    
+    height: 50px; 
+    width: 100%; 
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+#btnColor {
+    height: 30px;
+    width: 50px;
+}
+
+.color-pick {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+label {
+    color: var(--codeColor); 
+}
+
+.hover, .shadow {
+    padding: 20px 0 0 0;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 20px;
+    margin: 0 10px 20px 60px;
+    z-index: 1;
+}
+
+.button1 {
+    padding: 20px 50px 20px 50px;
+    background-color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#btnDummy {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+
+#generateCode {
+    background-image: linear-gradient(to top, #ff0844 0%, #f77062 100%);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%; 
+    width: 100%; 
+    border: none; 
+    outline: none;
+    border-radius: 4px;
+    color: #E8E8E8;
+    
+}
+
+#generatecode a {
+    text-decoration: none;
+    color: var(--codeColor);
+}
+
+.coding {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    background-color: var(--bgcolor);
+    padding: 20px 60px 0 20px;
+    width: 50vh;
+    margin-bottom: 60px;
+    
+}
+
+.css, .html {
+    background-color: var(--codeColor);
+    /* border: 1px solid white; */
+    border-radius: 10px 10px 0 0;
+    width: fit-content;
+    min-width: 75px;
+    height: 30px;
+    text-align: center;
+    color: var(--bgcolor);
+    opacity: 0;
+}
+
+#html-code, #css-code {
+    background-color: var(--codeColor);
+    color: var(--bgcolor);
+    padding: 10px 0 10px 20px;
+    border: none;
+    border-radius: 0 10px 10px 10px;
+    opacity: 0;
+}
+
+#btnBtn:active, #btnGrad:active, #btnGrid:active, #btnTab:active {
+    background-color: var(--bgcolor);
+    color: var(--codeColor);
+}
+
+#btnBtn:focus {
+    background-color: var(--bgcolor);
+    color: var(--codeColor);
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .tech-picker {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+}
